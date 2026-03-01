@@ -69,11 +69,11 @@ namespace ConsoleApp1
             //Method Overloading
 
             //Same method name
-            
+
             //Different parameters
-            
+
             //Same class
-            
+
             //Compile time polymorphism
             //public void SetPrice(decimal price)
             // {
@@ -85,11 +85,11 @@ namespace ConsoleApp1
             // Method Overriding
 
             // Same method name
-             
+
             // Same parameters
-             
+
             // Different class (child class)
-             
+
             // Run time polymorphism
             //     public virtual void PrintTicket()
             // {
@@ -98,6 +98,33 @@ namespace ConsoleApp1
             // public override void PrintTicket()
             // {
             // }
+            #endregion
+
+            #region Q3
+            //virtual
+
+            //Used in base class to allow overriding
+            
+            //public virtual void PrintTicket()
+            //        {
+            //        }
+            //override
+            
+            //        Used in child class to override base method
+            
+            //public override void PrintTicket()
+            //        {
+            //        }
+            //base
+            
+            //Used to access base class method
+            
+            //base.PrintTicket();
+            //abstract (optional)
+            
+            //        Forces child classes to override
+            
+            //        public abstract void PrintTicket();
         #endregion
     }
     }
