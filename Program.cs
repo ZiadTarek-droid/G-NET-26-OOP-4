@@ -104,28 +104,71 @@ namespace ConsoleApp1
             //virtual
 
             //Used in base class to allow overriding
-            
+
             //public virtual void PrintTicket()
             //        {
             //        }
             //override
-            
+
             //        Used in child class to override base method
-            
+
             //public override void PrintTicket()
             //        {
             //        }
             //base
-            
+
             //Used to access base class method
-            
+
             //base.PrintTicket();
             //abstract (optional)
-            
+
             //        Forces child classes to override
-            
+
             //        public abstract void PrintTicket();
-        #endregion
-    }
+            #endregion
+            #region Part-02
+            Cinema cinema = new Cinema();
+            cinema.OpenCinema();
+
+            Console.WriteLine("\n========== SetPrice Test ==========");
+
+            StandardTicket t1 = new StandardTicket
+            {
+                TicketId = 1,
+                MovieName = "Inception",
+                SeatNumber = "A-5"
+            };
+
+            t1.SetPrice(150);
+            t1.SetPrice(100, 1.5m);
+
+            VIPTicket t2 = new VIPTicket
+            {
+                TicketId = 2,
+                MovieName = "Avengers",
+                LoungeAccess = true,
+                ServiceFee = 50
+            };
+            t2.SetPrice(200);
+
+            IMAXTicket t3 = new IMAXTicket
+            {
+                TicketId = 3,
+                MovieName = "Dune",
+                Is3D = false
+            };
+            t3.SetPrice(180);
+
+            cinema.AddTicket(t1);
+            cinema.AddTicket(t2);
+            cinema.AddTicket(t3);
+
+            cinema.PrintAllTickets();
+
+            Cinema.ProcessTicket(t2);
+
+            cinema.CloseCinema();
+            #endregion
+        }
     }
 }
