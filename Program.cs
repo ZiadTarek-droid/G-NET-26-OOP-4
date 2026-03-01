@@ -1,5 +1,6 @@
 ﻿using System.Numerics;
 using System.Text;
+using System.Xml.Linq;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ConsoleApp1
@@ -33,35 +34,70 @@ namespace ConsoleApp1
             //}
 
 
-        //    Dynamic Binding(Late Binding)
+            //    Dynamic Binding(Late Binding)
 
-        //    Happens at run time.
-            
-        //    The method call is resolved based on the actual object type.
-            
-        //    Used in polymorphism.
-            
-        //    Requires:
-            
-        //    virtual
-            
-        //    override
+            //    Happens at run time.
 
-        //    class Animal
-        //{
-        //    public virtual void Speak()
-        //    {
-        //        Console.WriteLine("Animal speaks");
-        //    }
-        //}
+            //    The method call is resolved based on the actual object type.
 
-        //class Dog : Animal
-        //{
-        //    public override void Speak()
-        //    {
-        //        Console.WriteLine("Dog barks");
-        //    }
-        //}
+            //    Used in polymorphism.
+
+            //    Requires:
+
+            //    virtual
+
+            //    override
+
+            //    class Animal
+            //{
+            //    public virtual void Speak()
+            //    {
+            //        Console.WriteLine("Animal speaks");
+            //    }
+            //}
+
+            //class Dog : Animal
+            //{
+            //    public override void Speak()
+            //    {
+            //        Console.WriteLine("Dog barks");
+            //    }
+            //}
+            #endregion
+
+            #region Q2
+            //Method Overloading
+
+            //Same method name
+            
+            //Different parameters
+            
+            //Same class
+            
+            //Compile time polymorphism
+            //public void SetPrice(decimal price)
+            // {
+            //    }
+
+            // public void SetPrice(decimal basePrice, decimal multiplier)
+            // {
+            // }
+            // Method Overriding
+
+            // Same method name
+             
+            // Same parameters
+             
+            // Different class (child class)
+             
+            // Run time polymorphism
+            //     public virtual void PrintTicket()
+            // {
+            // }
+
+            // public override void PrintTicket()
+            // {
+            // }
         #endregion
     }
     }
