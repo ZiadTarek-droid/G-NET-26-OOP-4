@@ -1,5 +1,6 @@
 ﻿using System.Numerics;
 using System.Text;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ConsoleApp1
 {
@@ -8,26 +9,57 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             #region Q1
-        //    Static Binding(Early Binding)
+            //    Static Binding(Early Binding)
 
-        //    Happens at compile time.
+            //    Happens at compile time.
+
+            //    The method call is resolved before the program runs.
+
+            //    Faster performance.
+
+            //    Used with:
+
+            //    Method Overloading
+
+            //    Static methods
+
+            //    Non -virtual methods
+            //    class Test
+            //{
+            //    public void Show()
+            //    {
+            //        Console.WriteLine("Static Binding");
+            //    }
+            //}
+
+
+        //    Dynamic Binding(Late Binding)
+
+        //    Happens at run time.
             
-        //    The method call is resolved before the program runs.
+        //    The method call is resolved based on the actual object type.
             
-        //    Faster performance.
+        //    Used in polymorphism.
             
-        //    Used with:
+        //    Requires:
             
-        //    Method Overloading
+        //    virtual
             
-        //    Static methods
-            
-        //    Non -virtual methods
-        //    class Test
+        //    override
+
+        //    class Animal
         //{
-        //    public void Show()
+        //    public virtual void Speak()
         //    {
-        //        Console.WriteLine("Static Binding");
+        //        Console.WriteLine("Animal speaks");
+        //    }
+        //}
+
+        //class Dog : Animal
+        //{
+        //    public override void Speak()
+        //    {
+        //        Console.WriteLine("Dog barks");
         //    }
         //}
         #endregion
